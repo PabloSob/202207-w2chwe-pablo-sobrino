@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sass": "npx sass src/sass.scss public/css/styles.css",
+    "sass-watch": "npx sass src/sass.scss public/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +19,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.0",
     "jest": "^28.1.3",
-    "husky": "^8.0.0"
+    "sass": "^1.53.0"
   },
   "babel": {
     "env": {
