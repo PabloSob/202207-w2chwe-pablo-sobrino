@@ -1,4 +1,5 @@
 {
+  "type": "commonjs",
   "name": "cw2",
   "version": "1.0.0",
   "description": "",
@@ -6,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "sass-compile": "npx sass src/sass.scss public/css/styles.css",
-    "sass-watch": "npx sass src/sass.scss public/css/styles.css --watch"
+    "sass-compile": "npx sass ./src/sass.scss ./public/css/styles.css",
+    "sass-watch": "npx sass ./src/sass.scss ./public/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
