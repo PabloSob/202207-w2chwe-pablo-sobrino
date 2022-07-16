@@ -1,13 +1,13 @@
-const Bacteria = require("../cells/cells.js");
+const Bacteria = require("../cells/Cells.js");
 
 class Grid {
   columns;
-  rows;
+  /* rows; */
   boxes;
 
-  constructor(columns, rows) {
+  constructor(columns /* rows */) {
     this.columns = columns;
-    this.rows = rows;
+    /* this.rows = rows; */
     this.boxes = this.createBoxes();
   }
 

@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx jest --watchAll",
     "prepare": "husky install",
     "sass-compile": "npx sass ./src/sass.scss ./public/css/styles.css",
     "sass-watch": "npx sass ./src/sass.scss ./public/css/styles.css --watch"

@@ -1,13 +1,28 @@
-import Board from "./grid";
+import Grid from "./Grid.js";
 
-describe("Given a function Board()", () => {
-  describe("When it receives the value of 3", () => {
-    test("It should return an array with 9 arrays with 1 values of 0", () => {
-      const expectedResult = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+describe("Given a function Grid", () => {
+  describe("When it receives the value of 2 for columns", () => {
+    test("Then it should return twice the following array: [Bacteria{}]", () => {
+      const expectedResult = {
+        columns: 2,
+        /*  rows: 0, */
+        boxes: [
+          {
+            isAlive: false,
+            positionY: undefined,
+            positionX: undefined,
+          },
+          {
+            isAlive: false,
+            positionY: undefined,
+            positionX: undefined,
+          },
+        ],
+      };
 
-      const receivedResult = Board(3);
+      const receivedResult = new Grid(2);
 
-      expect(receivedResult).toStrictEqual(expectedResult);
+      expect(receivedResult).toEqual(expectedResult);
     });
   });
 });
